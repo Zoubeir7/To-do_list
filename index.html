@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des tâches</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gestionnaire de tâches</h1>
+        <form id="formulaireTache">
+            <label for="titre">Titre :</label>
+            <input type="text" id="titre" required>
+            <label for="description">Description :</label>
+            <textarea id="description" required></textarea>
+            <label for="dateLimite">Date</label>
+            <input type="date" id="dateLimite" required>
+            <label for="etat">État </label>
+            <select id="etat" required>
+                <option value="aFaire">À faire</option>
+                <option value="enCours">En cours</option>
+            </select>
+            <label for="priorite">Priorité :</label>
+            <select id="priorite" required>
+                <option value="basse">Faible</option>
+                <option value="moyenne">Moyenne</option>
+                <option value="haute">Forte</option>
+            </select>
+            <button type="submit"><ion-icon name="add-circle-outline"></ion-icon>></button>
+        </form>
+        <div id="formulaireModification" style="display: none;">
+            <h2>Modifier la tâche</h2>
+            <form id="formulaireModificationTache">
+                <label for="titreModif">Titre :</label>
+                <input type="text" id="titreModif" required>
+                <label for="descriptionModif">Description :</label>
+                <textarea id="descriptionModif" required></textarea>
+                <label for="dateLimiteModif">Date limite :</label>
+                <input type="date" id="dateLimiteModif" required>
+                <label for="etatModif">État d'avancement :</label>
+                <select id="etatModif" required>
+                    <option value="aFaire">À faire</option>
+                    <option value="enCours">En cours</option>
+                </select>
+                <label for="prioriteModif">Priorité :</label>
+                <select id="prioriteModif" required>
+                    <option value="basse">Faible</option>
+                    <option value="moyenne">Moyenne</option>
+                    <option value="haute">Forte</option>
+                </select>
+                <button type="submit">edit</button>
+            </form>
+        </div>
+
+
+        <ul id="listeTaches"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
