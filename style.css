@@ -1,117 +1,181 @@
+/*  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+.container {
+    width: 100%;
+
+    margin: 0 auto;
+}
+.champs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+h1{
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="date"], select {
+    width: 300px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+ul{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+ul li{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0,0.1);
+}
+ion-icon{
+    font-size: 20px;
+    margin-right: 5px;
+    background-color: midnightblue;
+    color: #f1f1f1;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.delete {
+    background-color: crimson;
+}
+.modify{
+    background-color: gold;
+    color: #333;
+} */
 
 
 
 body {
-    font-family: Arial, sans-serif;
-    background-color:#d5dadc;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
-
-
-//le contenaire 
 
 .container {
-    max-width: 400px;
+    max-width: 600px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
 }
 
-h1, h2 {
-    color: #007bff;
+h1 {
+    text-align: center;
+    color: #343a40;
 }
 
-form {
-    margin-bottom: 20px;
-}
-
-label {
-    display: flex; 
-    margin-bottom: 8px;
-    font-weight: bold;
+.champs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 input[type="text"],
 input[type="date"],
-select,
-textarea {
-    width: calc(100% - 20px);
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-}
-
-textarea {
-    height: 120px;
-}
-
-button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 6px;
+select {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
     font-size: 16px;
+    background-color: #f8f9fa;
 }
 
-button[type="submit"]:hover {
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
     background-color: #0056b3;
 }
 
-#listeTaches {
+ul {
     list-style-type: none;
     padding: 0;
+    gap: 15px; 
 }
 
-#listeTaches li {
-    background-color: #f5f5f5;
-    padding: 12px;
-    margin-bottom: 12px;
-    border-radius: 6px;
+li {
+   
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px; 
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn {
+    flex-direction: column; 
+    align-items:center ;
+    width: 50px ;
+    font-size: 10px;
 }
 
-#listeTaches li:hover {
-    background-color: #e0e0e0;
-}
-
-
-
-
-
-
-button:hover {
-    opacity: 0.8;
-}
-
-/* Style des boutons de suppression et de modification */
-.supprimer {
-    background-color: #f44336;
-    color: white;
-}
-
-.modifier {
-    background-color: #008CBA;
-}
-
-
-.barrer {
-    background-color: greenyellow;
-}
-
-/*modification*/
-
-
-div #formulaireModification {
-    display: none;
-}
-
-.barrer-tache p {
+.completed {
     text-decoration: line-through;
-} 
+    opacity: 0.6;
+}
+
+.completed span {
+    color: #999999;
+}
+
+.priority-low {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.priority-medium {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.priority-high {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .champs {
+        grid-template-columns: 1fr; 
+    }
+}
