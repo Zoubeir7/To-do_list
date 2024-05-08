@@ -20,5 +20,5 @@ Cette projet est réalisé par le groupe 3.
 ## Equipe de groupe 3 
   - Zoubeir Ba
   - N'Diaye Ousmane Camara
-  -Abderahmane Thimbo 
-  -Assa Baradji
+  - Abderahmane Thimbo 
+  - Assa Baradji
