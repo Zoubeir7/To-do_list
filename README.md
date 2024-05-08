@@ -1,36 +1,18 @@
- Application de gestion des tâches
+# Application de gestion de tâches
 
- 
- #introduction:
- cest une applications qui permet aux apprenants de gérer leurs taches quotidiennes et de respecter leurs deadlines.
+L'application de gestion de tâches permettra à l'utilisateur d'afficher une liste de tâches triées par ordre croissant en fonction de la date limite, d'ajouter une nouvelle tâche à la liste, d'attribuer une priorité à chaque tâche, de marquer une tâche comme étant terminée, de modifer des détails d'une tâche existante, de consulter des informations détaillées relatives à une tâche.
 
+## Table de matières
 
+- Répertorier une tâche en cliquant sur le bouton "Ajouter une tâche";
+- Ajouter la tâche au tableau en appuyant sur le bouton "Enregister";
+- Appuyer sur l'icône modifier pour modifier une tâche; 
+- Appuyer sur l'icône terminer pour déclarer une tâche comme terminé; 
 
-#Fonctionnalités:
-Affichage d'une liste de tâches triées par date limite (deadline) croissante.
-Ajout de nouvelles tâches à la liste.
-Attribution d'une priorité (Faible, Moyenne, Forte) à chaque tâche.
-Marquage des tâches comme terminées.
-Modification des détails des tâches existantes.
-Consultation des informations détaillées d'une tâche.
-Technologies utilisées
-HTML pour la structure de la page
-CSS pour le style et la mise en page
-JavaScript pour l'interactivité et la gestion des tâches.
+## Exigences
 
+Ce projet nécessite des compétences en HTML/CSS/JS/GIT/GITHUB.
 
-#Installation:
-L'application nécessite un navigateur web pour fonctionner. Aucun logiciel supplémentaire n'est requis.
+## Réalisation
 
-
-#Contribution:
-Si vous souhaitez contribuer à l'amélioration de cette application, vous êtes les bienvenus ! N'hésitez pas à créer une issue ou une pull request sur le dépôt Git.
-
-#Équipe de développement:
-zubeir Ba;
-Ndiaye Ousmane camara;
-Abderahmane Thimbo;
-Assa Baradji.
-
-#Formateur:
-Bakary Fofana
+Réalisé par Zoubeir Ba, N'Diaye Ousmane Camara,Abderahmane Thimbo et Assa Baradji.
