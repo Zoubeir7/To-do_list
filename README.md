@@ -4,7 +4,8 @@ L'application de gestion de tâches permettra à l'utilisateur d'afficher une li
 
 ## Table de matières
 
-- Répertorier une tâche en cliquant sur le bouton "Ajouter une tâche";
+- Répertorier une tâche en cliquant sur le bouton l'icône ajouter pour Ajouter une tâche;
+- Appuyer sur l'icon supprimer pour suprimer une tache;
 - Appuyer sur l'icône modifier pour modifier une tâche; 
 - Appuyer sur l'icône terminer pour déclarer une tâche comme terminé; 
 
