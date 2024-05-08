@@ -5,7 +5,6 @@ L'application de gestion de tâches permettra à l'utilisateur d'afficher une li
 ## Table de matières
 
 - Répertorier une tâche en cliquant sur le bouton "Ajouter une tâche";
-- Ajouter la tâche au tableau en appuyant sur le bouton "Enregister";
 - Appuyer sur l'icône modifier pour modifier une tâche; 
 - Appuyer sur l'icône terminer pour déclarer une tâche comme terminé; 
 
