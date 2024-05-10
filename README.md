@@ -11,6 +11,7 @@ L'application de gestion de tâches permettra à l'utilisateur d'afficher une li
 
 ## Exigences
 
+
 Ce projet nécessite des compétences en HTML/CSS/JS/GIT/GITHUB.
 
 ## Réalisation
@@ -18,4 +19,7 @@ Ce projet nécessite des compétences en HTML/CSS/JS/GIT/GITHUB.
 Cette projet est réalisé par le groupe 3.
 
 ## Equipe de groupe 3 
-  Zoubeir Ba, N'Diaye Ousmane Camara,Abderahmane Thimbo et Assa Baradji.
+  - Zoubeir Ba
+  - N'Diaye Ousmane Camara
+  - Abderahmane Thimbo 
+  - Assa Baradji
