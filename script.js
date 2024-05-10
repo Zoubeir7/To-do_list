@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const priorite = document.getElementById('priorite').value;
 
         // Créer un nouvel élément de tâche
+        
         const elementTache = document.createElement('li');
         elementTache.innerHTML = `
             <p><strong>${titre}</strong></p>

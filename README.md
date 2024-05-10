@@ -11,6 +11,7 @@ L'application de gestion de tâches permettra à l'utilisateur d'afficher une li
 
 ## Exigences
 
+
 Ce projet nécessite des compétences en HTML/CSS/JS/GIT/GITHUB.
 
 ## Réalisation

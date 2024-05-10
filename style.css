@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header .logo{
     display: flex;
      align-items: center;
