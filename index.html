@@ -1,39 +1,47 @@
-<!DOCTYPE html>
+tptot<!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Liste des tâches</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
+
 <body>
-    
-    <h1>Ma To-Do-List</h1>
-    <div class="container">
-        <div class="champs">
-            <input type="text" id="taskinput" placeholder="Ajouter une tache">
+  <header>
+      <div class="logo">
+         <img src="sol-logo.png">
+         <h1>G3</h1>
+      </div>
+  </header>
+     <div class="container">
+         <h2>Gestionnaire de tâches</h2>
+         <div class="champs">
+        <form id="formulaireTache">
+            <input type="text" id="titre" placeholder="Ajouter une tache">
             <input type="text" id="description" placeholder="Description">
-            <input type="date" id="deadline" placeholder="date limite">
-            <select id="priority">
+            <input type="date" id="dateLimite" placeholder="date limite">
+            <select id="priorite">
                 <option value="Faible">Faible</option>
                 <option value="Moyenne">Moyenne</option>
                 <option value="Forte">Forte</option>
             </select>
-            <select id="status">
+            <select id="etat">
                 <option value="En attente">En attente</option>
                 <option value="En cours">En cours</option>
                 <option value="Terminée">Terminée</option>
             </select>
-            <button onclick="addTask()"><ion-icon name="add-circle-outline"></ion-icon></button>
-        </div>  
-        
-    </div>
-    <ul id="taklist"></ul>
-
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+            <button type="submit"><ion-icon name="add-circle-outline"></ion-icon></button>
+        </form>
+         </div>  
+      </div>
+         <ul id="listeTaches"></ul>
+  
     <script src="script.js"></script>
 </body>
+
 </html>

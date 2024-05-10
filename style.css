@@ -1,95 +1,49 @@
-/*  
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
-}
-.container {
-    width: 100%;
-
-    margin: 0 auto;
-}
-.champs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-h1{
-    margin-bottom: 20px;
-}
-input[type="text"], input[type="date"], select {
-    width: 300px;
-    padding: 10px;
-    border: 0;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    height: 50px;
-}
-button{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-left: 5px;
-}
-ul{
-    width: 100%;
-    list-style: none;
-    padding: 0;
-}
-ul li{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #f1f1f1;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgb(0, 0, 0,0.1);
-}
-ion-icon{
-    font-size: 20px;
-    margin-right: 5px;
-    background-color: midnightblue;
-    color: #f1f1f1;
-    padding: 0.5rem;
-    border-radius: 50%;
-}
-.delete {
-    background-color: crimson;
-}
-.modify{
-    background-color: gold;
-    color: #333;
-} */
-
-
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color:black;
     margin: 0;
     padding: 0;
 }
-
+header .logo{
+    display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 10%;
+     height: 50px;
+     top: 0;
+     left: 0;
+     right: 0;
+     background-color: #e9ecef;
+     box-shadow: #0056b3;
+     z-index: 10; 
+ }
+ header .logo img{
+     width: 13%;
+     height: 50%;
+     margin: 30px; 
+ }
+ 
 .container {
-    max-width: 600px;
+    align-items: center;
+    max-width: 500px;
     margin: 20px auto;
     background-color: #ffffff;
     border-radius: 10px;
+    justify-content: space-between;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
+    bottom: 500px;
 }
 
 h1 {
     text-align: center;
     color: #343a40;
+}
+h2{
+    color: #007bff;    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .champs {
@@ -145,8 +99,7 @@ li {
 .btn {
     flex-direction: column; 
     align-items:center ;
-    width: 50px ;
-    font-size: 10px;
+    
 }
 
 .completed {
@@ -173,9 +126,40 @@ li {
     border-color: #f5c6cb;
 }
 
+/* Style des boutons de suppression et de modification */
+.supprimer {
+    background-color: #f44336;
+    color: white;
+    height: 10px;
+
+}
+
+.modifier {
+    background-color: #008CBA;
+    height: 10px;
+}
+
+
+.barrer {
+    background-color: green;
+    font-size: 100%;
+    height: 10px;
+}
+
+/*modification*/
+
+
+div #formulaireModification {
+    display: none;
+}
+
+.barrer-tache p {
+    text-decoration: line-through;
+}  
+
 @media screen and (max-width: 600px) {
     
     .champs {
         grid-template-columns: 1fr; 
     }
-}
+} 
